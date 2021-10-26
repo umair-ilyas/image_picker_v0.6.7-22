@@ -98,6 +98,7 @@ static const int SOURCE_GALLERY = 1;
     _imagePickerController = [[UIImagePickerController alloc] init];
     _imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
     _imagePickerController.delegate = self;
+    _imagePickerController.videoExportPreset = AVAssetExportPresetPassthrough;
     _imagePickerController.mediaTypes = @[
       (NSString *)kUTTypeMovie, (NSString *)kUTTypeAVIMovie, (NSString *)kUTTypeVideo,
       (NSString *)kUTTypeMPEG4
