@@ -4,7 +4,8 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        //jcenter()
     }
 
     dependencies {
@@ -15,10 +16,14 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
-           url 'https://google.bintray.com/exoplayer/'
+            url "https://jitpack.io"
         }
+        //jcenter()
+        //maven {
+        //   url 'https://google.bintray.com/exoplayer/'
+        //}
     }
 }
 
